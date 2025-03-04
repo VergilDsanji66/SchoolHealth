@@ -1,0 +1,61 @@
+.page{
+    background-color: purple;
+    height: 80vh;
+    margin-top: 1em;
+    position: relative;
+}
+
+.info{
+    position: relative;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 20%;
+}
+
+.info button{
+    width: clamp(5rem, 13vw, 12rem);
+}
+
+.info h1{
+    color: var(--neutral-white);
+    margin-bottom: 0.8rem;
+    font-size: clamp(0.8em, 12vw, 3em);
+    font-weight: 900;
+}
+
+.info p{
+    color: var(--neutral-gray);
+    margin-bottom: 0.8rem;
+}
+
+.page .button{
+    position: absolute;
+    top: 40%;
+    font-size: clamp(1em, 6vw, 5.5em);
+    color: rgba(86, 203, 242, 0.805);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.page .button:hover{
+    font-size: 5.5rem;
+    color: #27AE60;
+}
+
+.page .left{
+    left: 1%;
+}
+
+.page .left:hover{
+    left: 2%;
+}
+
+.page .right{
+    right: 1%;
+}
+
+.page .right:hover{
+    right: 2%;
+}
