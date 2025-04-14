@@ -1,0 +1,20 @@
+.Content{
+    position: absolute;
+    display: flex;
+    padding: 20px;
+    left: clamp(2rem, 20vw, 700rem);
+    right: clamp(2rem, 5vw, 10rem);
+    top: 90%;
+    box-sizing: border-box;
+}
+
+.content-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    padding: 20px;
+    width: 40rem;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 2rem;
+}

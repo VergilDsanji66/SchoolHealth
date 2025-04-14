@@ -1,0 +1,83 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dfdfdf;
+    padding: clamp(0.5rem, 2vw, 1rem);
+    margin: clamp(0.5rem, 2vw, 1rem);
+}
+
+.navbar-logo{
+    font-size: clamp(0.2em, 1.3vw, 2em);
+}
+
+.navbar-item-container{
+    display: flex;
+    border: 2px solid #000;
+    padding: clamp(0.3rem, 2vw, 0.35rem) clamp(0.1rem, 2vw, 0.2rem);
+    border-radius: 9999px;
+    width: fit-content;
+    background-color: white;
+}
+
+.navs-items{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.hidden-navs{
+    display: none;
+}
+
+.tab{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: clamp(0.375rem, 2vw, 0.5rem) clamp(0.75rem, 2vw, 1rem);
+    font-size: clamp(0.2em, 1.5vw, 0.95em);
+    line-height: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    mix-blend-mode: difference;
+    z-index: 10;
+}
+
+.tab-child{
+    display: flex;
+}
+.tab-child .tab-icon{
+    padding-right: 0.4rem;
+    font-size: 0.95em;
+}
+
+.active-search{
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-weight: 600;
+    font-size: clamp(0.2em, 2vw, 0.95em);
+    padding: clamp(0.375rem, 2vw, 0.5rem) clamp(0.75rem, 2vw, 1rem);
+}
+
+.inactive-search{
+    display: none;
+}
+
+.Cursor{
+    position: absolute;
+    height: clamp(0.375rem, 5vw, 2rem);
+    border-radius: 9999px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.sign{
+    text-decoration: underline;
+    font-size: clamp(0.2em, 1.3vw, 0.9em);
+}

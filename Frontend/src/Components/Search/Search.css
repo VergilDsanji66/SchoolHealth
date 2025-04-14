@@ -1,0 +1,24 @@
+.search-container{
+    position: relative;
+}
+
+.search-container input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-weight: 600;
+    padding: 0 0.5rem;
+    width: clamp(16rem,50vw, 33rem);
+    font-size: clamp(0.2em, 2vw, 0.95em);
+}
+
+.search-close-icon{
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+
+.search-close-icon:hover{
+    border-top: 2px solid black;
+}

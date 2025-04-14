@@ -1,0 +1,57 @@
+.Navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-item-container {
+    position: relative; /* Add this for Cursor positioning */
+    display: flex;
+    border: 2px solid black;
+    border-radius: 9999px;
+    padding: 0 1rem;
+    background-color: white;
+}
+
+.navs-items {
+    display: flex;
+    align-items: center;
+    position: relative; /* Ensures items stay above Cursor */
+    z-index: 10;
+    background-color: transparent; /* Changed from white */
+}
+
+.navs-items ul {
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.navs-items li {
+    position: relative;
+    list-style: none;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    position: relative; /* Helps with z-index stacking */
+}
+
+.navs-items li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+}
+
+.navs-items li:hover::after {
+    width: 100%;
+}
+.navbar-item-container .sp {
+    padding-right: 2rem;
+}
